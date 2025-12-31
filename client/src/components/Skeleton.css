@@ -1,0 +1,57 @@
+.skeleton {
+  background: #e3f0ff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+.weather-skeleton {
+  padding: 24px;
+  min-height: 160px;
+}
+.skeleton-title {
+  width: 120px;
+  height: 24px;
+  background: #b3d8ff;
+  border-radius: 6px;
+  margin: 0 auto 16px auto;
+}
+.skeleton-main {
+  width: 80%;
+  height: 48px;
+  background: #b3d8ff;
+  border-radius: 8px;
+  margin: 0 auto 16px auto;
+}
+.skeleton-details {
+  width: 60%;
+  height: 18px;
+  background: #b3d8ff;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.forecast-skeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  min-width: 100px;
+}
+.skeleton-date, .skeleton-temp, .skeleton-cond {
+  width: 60px;
+  height: 14px;
+  background: #b3d8ff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.skeleton-icon {
+  width: 48px;
+  height: 48px;
+  background: #b3d8ff;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
