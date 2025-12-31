@@ -8,8 +8,8 @@ import CityAutocomplete from './components/CityAutocomplete';
 import WeatherAnimation from './components/WeatherAnimation';
 import './App.css';
 
-const API_URL = 'http://localhost:5000/api/weather';
-const HISTORY_URL = 'http://localhost:5000/api/history';
+const API_URL = 'https://your-backend.onrender.com/api/weather';
+const HISTORY_URL = 'https://your-backend.onrender.com/api/history';
 
 function App() {
   const [city, setCity] = useState('');

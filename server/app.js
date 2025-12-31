@@ -14,6 +14,14 @@ app.use(cors());
 app.use('/api', weatherRoutes);
 app.use('/api', historyRoutes);
 
+
+// Serve React static build
+const path = require('path');
+app.use(express.static(path.join(__dirname, '../client/build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
+
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.MONGO_URI, {
